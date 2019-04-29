@@ -1,0 +1,61 @@
+@import "../media.scss";
+
+.WebRTCMedia {
+  display: inline-flex;
+  flex: auto;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 0px;
+  margin: 0px;
+
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+
+  .Video {
+    background-color: rgba(200, 200, 200, 1);
+    margin: 1px;
+    transform: rotateY(180deg);
+  }
+
+  .Audio {
+    display: contents;
+  }
+
+  .Status {
+    flex: 1 1 auto;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 4px 0px 0px 0px;
+
+    .Item {
+      flex-flow: row nowrap;
+      align-items: space-between;
+      justify-content: space-around;
+      align-content: space-around;
+      width: 100%;
+    }
+  }
+
+  .Ctrl {
+    min-height: 20px;
+    width: 100%;
+    flex: 1 1 auto;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px 0px 0px;
+
+    .BtnStart {
+      height: 20px;
+      margin: 1px 5px 1px 5px !important;
+    }
+
+    .BtnOffer {
+      height: 20px;
+      margin: 1px 5px 1px 5px !important;
+    }
+  }
+}

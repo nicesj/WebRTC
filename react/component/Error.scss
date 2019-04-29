@@ -1,0 +1,22 @@
+@import "../media.scss";
+
+.Error {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(255, 255, 255, 1);
+
+  .Error {
+    font-color: rgba(255, 0, 0, 1);
+    border: 1px solid rgba(255, 0, 0, 1);
+  }
+
+  .Info {
+    font-color: rgba(0, 0, 255, 1);
+    border: 1px solid rgba(0, 0, 255, 1);
+  }
+}
